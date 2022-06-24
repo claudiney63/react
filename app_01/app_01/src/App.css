@@ -1,4 +1,26 @@
-.App {
+.texto {
+  color: green;
+  font-size: 2rem;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa a {
+  color: red;
+  text-decoration: none;
+}
+
+.caixa a:hover {
+  background-color: red;
+  color: white;
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +57,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

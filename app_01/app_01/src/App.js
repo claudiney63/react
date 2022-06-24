@@ -60,15 +60,28 @@ export default function App() { //na mesma linha eu ja mando importar
   )
 }*/
 
+/*
 import Header from './components/Header'
 import Corpo from './components/Corpo'
+*/
+
+import './App.css'
 
 export default function App() {
 
+  const txtDestaque = {
+    color: 'blue',
+    fontSize: '5rem',
+  }
+
   return (
     <>
-      <Header />
-      <Corpo />
+      <section className='caixa'>
+        <h1 style={{ color: 'red', fontSize: '3rem' }}>Olá Mundo</h1>
+        <h2 style={txtDestaque}>Vamos estudar</h2>
+        <p className='texto'>Estudando Estilização</p>
+        <a href='https://www.google.com' target='_blank'>google.com</a>
+      </section>
     </>
   )
 }
