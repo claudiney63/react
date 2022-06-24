@@ -25,7 +25,7 @@ function App() {
 export default App;*/
 
 import React from 'react' //aqui eu importo a biblioteca react
-import Naruto01 from './components/imgs/unnamed.png'
+/*import Naruto01 from './components/imgs/unnamed.png'
 //eu dou nome a uma imagem e importo ela apartir do caminho em especifico
 
 export default function App() { //na mesma linha eu ja mando importar
@@ -57,5 +57,17 @@ export default function App() { //na mesma linha eu ja mando importar
       </section>
     </>
 
+  )
+}*/
+
+import Header from './components/Header'
+import Corpo from './components/Corpo'
+
+export default function App() {
+  return (
+    <>
+      <Header/>
+      <Corpo/>
+    </>
   )
 }
