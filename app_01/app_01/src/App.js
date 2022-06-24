@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,4 +22,18 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
+
+import React from 'react' //aqui eu importo a biblioteca react
+
+export default function App() { //na mesma linha eu ja mando importar
+  return ( //eu só posso retornar um componente
+    //todos os componentes precisam está em um unico só
+    //não posso ter tags não finalizadas
+    <>
+    <p> Estudos de React</p>
+    <br/>
+    <p> Primeiro dia de Estudo</p>
+    </>
+  )
+}
