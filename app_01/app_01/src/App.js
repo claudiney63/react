@@ -24,7 +24,7 @@ function App() {
 
 export default App;*/
 
-import React from 'react' //aqui eu importo a biblioteca react
+//import React from 'react' //aqui eu importo a biblioteca react
 /*import Naruto01 from './components/imgs/unnamed.png'
 //eu dou nome a uma imagem e importo ela apartir do caminho em especifico
 
@@ -65,6 +65,7 @@ import Header from './components/Header'
 import Corpo from './components/Corpo'
 */
 
+/*
 import './App.css'
 import Relogio from './components/Relogio'
 
@@ -84,6 +85,32 @@ export default function App() {
         <p className='texto'>Estudando Estilização</p>
         <a href='https://www.google.com' target='_blank'>google.com</a>
       </section>
+    </>
+  )
+}
+*/
+
+import React, {useState} from 'react'
+import Contador from './components/Contador'
+
+export default function App() {
+
+  const [num, setNum] = useState(10)
+
+  let n1 = 10
+  n1 = 34
+
+  //a variavel apenas, não é rederizada na tela, por exemplo o botão ali
+  //para isso usamos o useState
+
+  //passo os valores dos parametros que desejo
+
+  return (
+    <>
+      <p>Valor da variavel: {n1}</p>
+      <button onClick={(n1) => n1++}>Somar</button> 
+      <br/>
+      <Contador num={num} setNum={setNum}/>
     </>
   )
 }

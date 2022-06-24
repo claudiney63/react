@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h1 {
+    color: blue;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.box button {
+    margin: 2rem;
+}
