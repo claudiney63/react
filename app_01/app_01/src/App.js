@@ -66,6 +66,7 @@ import Corpo from './components/Corpo'
 */
 
 import './App.css'
+import Relogio from './components/Relogio'
 
 export default function App() {
 
@@ -77,6 +78,7 @@ export default function App() {
   return (
     <>
       <section className='caixa'>
+        <Relogio/>
         <h1 style={{ color: 'red', fontSize: '3rem' }}>Olá Mundo</h1>
         <h2 style={txtDestaque}>Vamos estudar</h2>
         <p className='texto'>Estudando Estilização</p>
