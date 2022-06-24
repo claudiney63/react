@@ -63,7 +63,6 @@ export default function App() { //na mesma linha eu ja mando importar
 import Header from './components/Header'
 import Corpo from './components/Corpo'
 
-
 export default function App() {
 
   return (
