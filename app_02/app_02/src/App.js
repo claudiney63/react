@@ -95,6 +95,7 @@ export default function App() {
 }
 */
 
+/*
 export default function App() {
 
   const carros = [
@@ -113,6 +114,34 @@ export default function App() {
   return (
     <>
       <ul>{carrosMap}</ul>
+    </>
+  )
+}
+*/
+
+export default function App() {
+
+  const [nome, setNome] = useState('')
+  const [carro, setCarro] = useState('Camaro')
+
+  const randomName = (e) => {
+    setNome(e.target.value)
+  }
+
+  return ( //'e' como parametro consigo pegar o elemento value do input
+    <>
+      <label>Digite seu nome: </label>
+      <input type='text' name='fnome' value={nome} onChange={(e) => randomName(e)}/>
+      <p>Nome digitado: { nome }</p>
+     
+      <label>Selecione um carro: </label>
+      <select value={carro} onChange={(e) => setCarro(e.target.value)}>
+        <option value="HRV">HRV</option>
+        <option value="Golf">Golf</option>
+        <option value="Toro">Toro</option>
+        <option value="Camaro">Camaro</option>
+      </select>
+      <p>Carro Selecionado: {carro} </p>
     </>
   )
 }
