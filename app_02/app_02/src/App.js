@@ -24,6 +24,9 @@ export default function App() {
   );
 }*/
 
+
+
+/*
 export default function App() {
 
   const [log, setLog] = useState(false)
@@ -57,4 +60,35 @@ export default function App() {
     </>
   )
 }
+*/
 
+export default function App() {
+
+  const [cor, setCor] = useState(1)
+
+  const retornaCor = (c) => {
+    if (c == 1) {
+      return {color: 'red'}
+    } else if (c == 2) {
+      return {color: 'green'}
+    } else {
+      return {color: 'blue'}
+    }
+  }
+
+  const mudaCor = () => {
+    setCor(cor + 1)
+    if(cor > 2) {
+      setCor(1)
+    }
+  }
+
+  //setInterval(mudaCor, 1200)
+
+  return (
+    <>
+      <h1 style={retornaCor(cor)}>Hello world</h1>
+      <button onClick={() => mudaCor()}>Muda Cor</button>
+    </>
+  )
+}
