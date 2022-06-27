@@ -62,6 +62,7 @@ export default function App() {
 }
 */
 
+/*
 export default function App() {
 
   const [cor, setCor] = useState(1)
@@ -89,6 +90,29 @@ export default function App() {
     <>
       <h1 style={retornaCor(cor)}>Hello world</h1>
       <button onClick={() => mudaCor()}>Muda Cor</button>
+    </>
+  )
+}
+*/
+
+export default function App() {
+
+  const carros = [
+    {categoria: "Esporte", preco: "120000.00", modelo: "Gof GIT"},
+    {categoria: "SUV", preco: "85000.00", modelo: "HRV"},
+    {categoria: "Esporte", preco: "78000.00", modelo: "Hilux"},
+    {categoria: "Utilitario", preco: "180000.00", modelo: "Ranger"},
+    {categoria: "SUV", preco: "60000.00", modelo: "Camaro"},
+  ]
+
+  const carrosMap = carros.map(
+    (c, i) =>
+      <li key={i}>Preço: R$ {c.preco} - Categoria: {c.categoria} / Modelo: {c.modelo}</li>
+  )
+
+  return (
+    <>
+      <ul>{carrosMap}</ul>
     </>
   )
 }
