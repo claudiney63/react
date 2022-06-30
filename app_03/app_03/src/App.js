@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 import Nota from './componentes/Nota'
 import Resultado from './componentes/Resultado'
 
@@ -30,4 +30,15 @@ export default function App() {
     </>
   )
 }
+*/
 
+import Titulo from './componentes/Titulo'
+import Texto from './componentes/Texto'
+
+export default function App() {
+  return (
+    <Titulo>
+      <Texto></Texto>
+    </Titulo>
+  )
+}
