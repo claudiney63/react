@@ -5,7 +5,8 @@ export default function Nota(props) {
             <input
                 type='text'
                 value={props.nota}
-                onChange={(e) => props.setNota(parseFloat(e.target.value))} />
+                name={props.nome}
+                onChange={(e) => props.setNota(e)} />
         </>
     )
 }
