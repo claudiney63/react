@@ -32,6 +32,7 @@ export default function App() {
 }
 */
 
+/*
 import Titulo from './componentes/Titulo'
 import Texto from './componentes/Texto'
 
@@ -40,5 +41,29 @@ export default function App() {
     <Titulo>
       <Texto></Texto>
     </Titulo>
+  )
+}
+*/
+
+import { useEffect, useState } from "react"
+
+//é um hook, assim que a pagina é chamada ou atualizada ele é chamado
+
+export default function App() {
+
+  const [contador, setCont] = useState(0)
+
+  useEffect (
+    () => {
+      console.log('Pagina carregada')
+      document.title = 'Contagem: '+contador
+    }
+  )
+
+  return (
+    <>
+      <p>Contagem: {contador}</p>
+      <button onClick={() => setCont(contador+1)}>Contar</button>
+    </>
   )
 }
