@@ -1,7 +1,9 @@
-import Classe from './componentes/ComponenteClasse'
+import Classe from './componentes/StateClasse'
 
 export default function App() {
   return (
-    <><Classe nome="Claudiney" sobrenome='Ryan'/></>
+    <>
+      <Classe marca="HB20" />
+    </>
   )
 }
