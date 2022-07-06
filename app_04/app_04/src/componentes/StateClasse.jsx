@@ -8,7 +8,17 @@ export default class StateClasse extends React.Component {
             ligado: false,
             velocidade: 0,
         }
+
+        this.acelerarBIND = this.acelerar.bind(this)
     }
+
+    //BIND serve para redefinir o contexto do this, em uma classe 
+    //isso facilita o uso das funções que contem o setstate
+
+    //redefini o contexto do this no metodo Acelerar(), assim podemos chamar apenas acelerarBIND
+    //sem precisar usar um arrow function no onclick do botão
+
+    
 
     ligarEDesligar() {
         //this.setState({ ligado: !(this.state.ligado) })
@@ -42,7 +52,7 @@ export default class StateClasse extends React.Component {
                 <button onClick={() => this.ligarEDesligar()}>{this.state.ligado ? 'Desligar' : 'Ligar'} </button><br/>
 
                 <p>Velocidade: {this.state.velocidade}</p>
-                <button onClick={() => this.acelerar()}> Acelerar </button>
+                <button onClick={this.acelerarBIND}> Acelerar </button>
             </>
         )
     }
