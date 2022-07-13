@@ -1,9 +1,9 @@
-import Classe from './componentes/StateClasse'
+import Classe from './componentes/BaseClasse'
 
 export default function App() {
   return (
     <>
-      <Classe marca={'HB20'} fator={20} />
+      <Classe/>
     </>
   )
 }
