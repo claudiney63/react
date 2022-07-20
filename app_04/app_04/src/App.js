@@ -1,4 +1,4 @@
-import Classe from './componentes/BaseClasse'
+import Classe from './componentes/Info'
 
 export default function App() {
   return (
